@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fc;
+    color: #263449;
+    margin: 0;
+}
+
+nav {
+    background-color: #244A78;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color:#244A78;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#myBlock {
+    background-color:lightgrey;
+    padding: 20px 20px;
+    margin: 20px 350px;
+    border-radius: 8px;
+}
+
+#colorBox {
+    padding: 50px;
+    margin: 20px 500px;
+    background-color:cornflowerblue;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#textInput {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin: 15px auto;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    text-align: center;
+}
+
+#calculator {
+    width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#calculator input,
+#calculator select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#calculator p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#todoApp {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background-color: #f0f0f0;
+    min-height: 450px;
+    box-sizing: border-box;
+}
+
+#todoApp h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.formSection form {
+    background-color: white;
+    padding: 30px;
+}
+
+.formSection label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#taskTitle,
+#taskDescription {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d5d5d5;
+    background-color: #f5f5f5;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#taskDescription {
+    height: 160px;
+    resize: vertical;
+}
+
+.formSection button {
+    width: 60%;
+    padding: 14px;
+    background-color: #4545f5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.formSection button:hover {
+    background-color: #3030d8;
+}
+
+@media (max-width: 650px) {
+    #todoApp {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .formSection form {
+        padding: 20px;
+    }
+}
