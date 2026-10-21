@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fc;
+    color: #263449;
+    margin: 0;
+}
+
+nav {
+    background-color: #244A78;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 32px;
+}
+
+#toDoApp {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 80px auto;
+    gap: 100px;
+}
+
+.taskSection {
+    width: 400px;
+}
+
+.formSection {
+    width: 450px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+#taskList{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#taskList li{
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    min-height: 100px;
+    font-size: 13px;
+}
+
+#taskForm{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+}
+
+label {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+input, textarea{
+    width: 100%;
+    background-color: #f4f4f4;
+    color: #193759;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px
+}
+
+
+input {
+    height: 24px;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+}
+
+#taskTitle,
+#taskDescription {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d5d5d5;
+    background-color: #f5f5f5;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color:#244A78;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#taskList .taskCard {
+    position: relative;
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #193759;
+    border-radius: 8px;
+    min-height: 80px;
+    font-size: 13px;
+}
+
+.taskActions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.taskActions button {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.completeButton {
+    background-color: #244A78;
+    color: white;
+}
+
+.deleteButton {
+    background-color: #ffffff;
+    color: #d93636;
+    border: 1px solid #d93636;
+}
+
+@media (max-width: 768px) {
+    #toDoApp {
+        flex-direction: column;
+        gap: 30px;
+        margin: 30px auto;
+    }
+
+    .taskSection,
+    .formSection {
+        width: 100%;
+        flex: none;
+    }
+
+    #taskForm {
+        padding: 25px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
